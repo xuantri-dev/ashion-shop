@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FONT AWESOME ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="assets/boxicons/css/boxicons.min.css" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <title>Ashion - Thời Trang Nam Hiện Đại, Đơn Giản, Tinh Tế</title>
+  </head>
+
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <div class="header__top">
+        <div class="header__container container">
+          <div class="header__contact">
+            <a
+              href="tel:0999999999"
+              title="Ashion HOTLINE"
+              class="header__top-action"
+              >0999.999.999</a
+            >
+            <span>
+              Tòa nhà QTSC9 (toà T), đường Tô Ký, phường Tân Chánh Hiệp, quận
+              12, TP HCM.</span
+            >
+          </div>
+
+          <p class="header__alert-news">
+            Khuyến mãi cực sốc - Trên toàn bộ sản phẩm
+          </p>
+
+          <a href="" class="header__top-action"> Hệ Thống Cửa Hàng </a>
+        </div>
+      </div>
+
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo" title="Trang Chủ">
+          <img src="assets/img/logo.png" alt="" class="nav__logo-img" />
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <div class="nav__menu-top">
+            <a href="index.html" class="nav__menu-logo">
+              <img src="assets/img/logo.png" alt="" />
+            </a>
+
+            <div class="nav__close" id="nav-close">
+              <i class="bx bx-x"></i>
+            </div>
+          </div>
+
+          <ul class="nav__list">
+            <!-- Thêm class active-link vào sau mỗi thẻ a để thẻ đó đổi màu active -->
+            <li class="nav__item">
+              <a href="shop.html" class="nav__link">Sản Phẩm Mới</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="shop.html" class="nav__link">Khuyến Mãi</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="shop.html" class="nav__link">Áo</a>
+              <i class="bx bxs-chevron-down nav__icon"></i>
+              <ul class="nav__item-sub">
+                <li class="sub__item">
+                  <a href="#" class="nav__item-sublink">Áo Thun</a>
+                </li>
+                <li class="sub__item">
+                  <a href="#" class="nav__item-sublink">Áo Polo</a>
+                </li>
+                <li class="sub__item">
+                  <a href="#" class="nav__item-sublink">Áo Sơ Mi</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav__item">
+              <a href="shop.html" class="nav__link">Quần</a>
+              <i class="bx bxs-chevron-down nav__icon"></i>
+              <ul class="nav__item-sub">
+                <li class="sub__item">
+                  <a href="#" class="nav__item-sublink">Quần Jeans</a>
+                </li>
+                <li class="sub__item">
+                  <a href="#" class="nav__item-sublink">Quần Short</a>
+                </li>
+                <li class="sub__item">
+                  <a href="#" class="nav__item-sublink">Quần Tây Âu</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav__item">
+              <a href="shop.html" class="nav__link">Phụ Kiện</a>
+              <i class="bx bxs-chevron-down nav__icon"></i>
+              <ul class="nav__item-sub">
+                <li class="sub__item">
+                  <a href="#" class="nav__item-sublink">Thắt Lưng</a>
+                </li>
+                <li class="sub__item">
+                  <a href="#" class="nav__item-sublink">Ví Nam</a>
+                </li>
+                <li class="sub__item">
+                  <a href="#" class="nav__item-sublink">Mắt Kính</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">Liên Hệ</a>
+            </li>
+          </ul>
+
+          <div class="header__search">
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Nhập tên sản phẩm"
+            />
+
+            <a class="search__btn" title="Tìm Kiếm">
+              <i class="bx bx-search bx-sm"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="header__user-actions">
+          <a href="login.html" class="header__action-btn" title="Đăng Nhập">
+            <i class="bx bx-user"></i>
+          </a>
+
+          <a href="cart.html" class="header__action-btn" title="Giỏ Hàng">
+            <i class="bx bx-cart-alt"></i>
+            <span class="count">3</span>
+          </a>
+
+          <div class="header__action-btn nav__toggle" id="nav-toggle">
+            <i class="bx bx-menu"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== BREADCRUMB ===============-->
+      <section class="breadcrumb">
+        <ul class="breadcrumb__list flex container">
+          <li><a href="index.html" class="breadcrumb__link">Trang Chủ</a></li>
+          <li><span class="breadcrumb__link">></span></li>
+          <li><span class="breadcrumb__link">Đăng Nhập</span></li>
+        </ul>
+      </section>
+
+      <!--=============== LOGIN ===============-->
+      <section class="login__section section--lg">
+        <div class="login__container container">
+          <div class="login">
+            <h3 class="section__title">Đăng Nhập</h3>
+
+            <form action="" class="form grid">
+              <input
+                type="text"
+                placeholder="Tên Tài Khoản"
+                class="form__input"
+                autofocus
+              />
+
+              <input
+                type="password"
+                placeholder="Mật Khẩu"
+                class="form__input"
+              />
+
+              <a href="password-forgot.html" class="login_link"
+                >Quên Mật Khẩu</a
+              >
+
+              <div class="form__btn">
+                <button class="btn" type="submit">Đăng Nhập</button>
+              </div>
+
+              <p>
+                Chưa có tài khoản? <a href="register.html">Đăng Kí Ngay!</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== NEWSLETTER ===============-->
+      <section class="newsletter section home__newsletter">
+        <div class="newsletter__container container grid">
+          <h3 class="newsletter__title flex">
+            <i class="fa-regular fa-envelope" class="newsletter__icon"></i>
+            Đăng Kí Nhận Tin Từ Ashion
+          </h3>
+
+          <p class="newsletter__description">
+            ... cập nhật tin tức và các ưu đãi mới nhất.
+          </p>
+
+          <form action="" class="newsletter__form">
+            <input
+              type="text"
+              placeholder="Nhập Email của bạn"
+              class="newsletter__input"
+            />
+            <button type="submit" class="newsletter__btn">Đăng Ký</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+      <div class="footer__container grid">
+        <div class="footer__content">
+          <a href="index.html" class="footer__logo">
+            <img src="assets/img/logo.png" alt="" class="footer__logo-img" />
+          </a>
+
+          <h4 class="footer__subtitle">Liên Hệ</h4>
+
+          <p class="footer__description">
+            <span>Địa Chỉ:</span> Tòa nhà QTSC9 (toà T), đường Tô Ký, phường Tân
+            Chánh Hiệp, quận 12, TP HCM
+          </p>
+
+          <p class="footer__description">
+            <span>Điện Thoại:</span>
+            <a href="tel:0999999999" title="Ashion HOTLINE" class="footer__tel"
+              >0999.999.999</a
+            >
+          </p>
+
+          <p class="footer__description">
+            <span>Giờ Hoạt Động:</span> 10:00 - 22:00
+          </p>
+
+          <p class="footer__description">
+            <span>Email:</span>
+            <a
+              href="caodang@fpt.edu.vn"
+              title="Ashion Email"
+              class="footer__email"
+              >Caodang@fpt.edu.vn</a
+            >
+          </p>
+
+          <div class="footer__social flex">
+            <h4 class="footer__subtitle">Kết Nối Với Chúng Tôi</h4>
+
+            <div class="footer__social-links">
+              <a href="">
+                <i class="fa-brands fa-facebook-f footer__social-icon"></i>
+              </a>
+            </div>
+
+            <div class="footer__social-links">
+              <a href="">
+                <i class="fa-brands fa-twitter footer__social-icon"></i>
+              </a>
+            </div>
+
+            <div class="footer__social-links">
+              <a href="">
+                <i class="fa-brands fa-instagram footer__social-icon"></i>
+              </a>
+            </div>
+
+            <div class="footer__social-links">
+              <a href="">
+                <i class="fa-brands fa-pinterest-p footer__social-icon"></i>
+              </a>
+            </div>
+
+            <div class="footer__social-links">
+              <a href="">
+                <i class="fa-brands fa-youtube footer__social-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Về Chúng Tôi</h3>
+
+          <ul class="footer__links">
+            <li><a href="" class="footer__link">Giới Thiệu</a></li>
+            <li><a href="" class="footer__link">Hệ Thống Cửa Hàng</a></li>
+            <li><a href="" class="footer__link">Thông Tin Tuyển Dụng</a></li>
+            <li><a href="" class="footer__link">Hợp Tác Kinh Doanh</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Hỗ Trợ Khách Hàng</h3>
+
+          <ul class="footer__links">
+            <li><a href="" class="footer__link">Câu Hỏi Thường Gặp</a></li>
+            <li>
+              <a href="" class="footer__link">Hướng Dẫn Mua Hàng Trực Tuyến</a>
+            </li>
+            <li><a href="" class="footer__link">Trung Tâm Hỗ Trợ</a></li>
+            <li><a href="" class="footer__link">Tra Cứu Đơn Hàng</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Phương Thức Thanh Toán</h3>
+          <br />
+          <a href="">
+            <i class="fa-brands fa-cc-visa footer__payment-item"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-cc-mastercard footer__payment-item"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-cc-jcb footer__payment-item"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="copyright">&copy; 2021, Công ty Cổ phần Thời trang Ashion</p>
+        <span class="designer">Trần Xuân Trí</span>
+      </div>
+    </footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

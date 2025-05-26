@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="assets/boxicons/css/boxicons.min.css" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <title>ADMIN ASHION</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="admin-sidebar__container">
+        <a href="#">Trang chủ</a>
+        <a href="#">Sản phẩm</a>
+        <a href="#">Khách hàng</a>
+        <a href="#">Đơn hàng</a>
+      </section>
+
+      <section class="admin__container">
+        <div class="admin-search__container">
+          <input type="text" placeholder="Nhập thông tin" />
+          <button type="button" class="btn btn__admin-search">Tìm Kiếm</button>
+        </div>
+
+        <div class="header-admin__container">
+          <h1>Quản lí sản phẩm</h1>
+        </div>
+
+        <ul class="admin__breadcrumb">
+          <li>Trang chủ</li>
+          <li>Sản phẩm</li>
+        </ul>
+
+        <button class="btn btn__admin-add" id="addProductBtn">
+          Thêm sản phẩm
+        </button>
+
+        <div class="table-admin__container">
+          <table class="table__admin">
+            <tr>
+              <th>ID</th>
+              <th>Tên Sản Phẩm</th>
+              <th>Giá</th>
+              <th>Giá khuyến mãi</th>
+              <th>Mô tả</th>
+              <th>Ảnh 1</th>
+              <th>Ảnh 2</th>
+              <th>Tình trạng</th>
+              <th>Số lượng</th>
+              <th>Button</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+              <td>
+                <span class="table-admin__price">500.000đ</span>
+              </td>
+              <td>
+                <span class="table-admin__price">500.000đ</span>
+              </td>
+              <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+              <td>
+                <img
+                  src="./assets/img/pro-m-jean-1-1.jpg"
+                  alt=""
+                  class="table-admin__img"
+                />
+              </td>
+              <td>
+                <img
+                  src="./assets/img/pro-m-jean-1-2.jpg"
+                  alt=""
+                  class="table-admin__img"
+                />
+              </td>
+
+              <td><span>Còn hàng</span></td>
+              <td><span>3</span></td>
+              <td>
+                <a class="table__admin-edit" title="Sửa">
+                  <i class="bx bx-edit-alt bx-sm"></i>
+                </a>
+                <a class="table__admin-trash" title="Xóa">
+                  <i class="bx bx-trash bx-sm"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+              <td>
+                <span class="table-admin__price">500.000đ</span>
+              </td>
+              <td>
+                <span class="table-admin__price">500.000đ</span>
+              </td>
+              <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+              <td>
+                <img
+                  src="./assets/img/pro-m-jean-1-1.jpg"
+                  alt=""
+                  class="table-admin__img"
+                />
+              </td>
+              <td>
+                <img
+                  src="./assets/img/pro-m-jean-1-2.jpg"
+                  alt=""
+                  class="table-admin__img"
+                />
+              </td>
+
+              <td><span>Hết hàng</span></td>
+              <td><span>0</span></td>
+              <td>
+                <a class="table__admin-edit" title="Sửa">
+                  <i class="bx bx-edit-alt bx-sm"></i>
+                </a>
+                <a class="table__admin-trash" title="Xóa">
+                  <i class="bx bx-trash bx-sm"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+              <td>
+                <span class="table-admin__price">500.000đ</span>
+              </td>
+              <td>
+                <span class="table-admin__price">500.000đ</span>
+              </td>
+              <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+              <td>
+                <img
+                  src="./assets/img/pro-m-jean-1-1.jpg"
+                  alt=""
+                  class="table-admin__img"
+                />
+              </td>
+              <td>
+                <img
+                  src="./assets/img/pro-m-jean-1-2.jpg"
+                  alt=""
+                  class="table-admin__img"
+                />
+              </td>
+
+              <td><span>Còn hàng</span></td>
+              <td><span>3</span></td>
+              <td>
+                <a class="table__admin-edit" title="Sửa">
+                  <i class="bx bx-edit-alt bx-sm"></i>
+                </a>
+                <a class="table__admin-trash" title="Xóa">
+                  <i class="bx bx-trash bx-sm"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+              <td>
+                <span class="table-admin__price">500.000đ</span>
+              </td>
+              <td>
+                <span class="table-admin__price">500.000đ</span>
+              </td>
+              <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+              <td>
+                <img
+                  src="./assets/img/pro-m-jean-1-1.jpg"
+                  alt=""
+                  class="table-admin__img"
+                />
+              </td>
+              <td>
+                <img
+                  src="./assets/img/pro-m-jean-1-2.jpg"
+                  alt=""
+                  class="table-admin__img"
+                />
+              </td>
+
+              <td><span>Còn hàng</span></td>
+              <td><span>3</span></td>
+              <td>
+                <a class="table__admin-edit" title="Sửa">
+                  <i class="bx bx-edit-alt bx-sm"></i>
+                </a>
+                <a class="table__admin-trash" title="Xóa">
+                  <i class="bx bx-trash bx-sm"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+              <td>
+                <span class="table-admin__price">500.000đ</span>
+              </td>
+              <td>
+                <span class="table-admin__price">500.000đ</span>
+              </td>
+              <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+              <td>
+                <img
+                  src="./assets/img/pro-m-jean-1-1.jpg"
+                  alt=""
+                  class="table-admin__img"
+                />
+              </td>
+              <td>
+                <img
+                  src="./assets/img/pro-m-jean-1-2.jpg"
+                  alt=""
+                  class="table-admin__img"
+                />
+              </td>
+
+              <td><span>Còn hàng</span></td>
+              <td><span>3</span></td>
+              <td>
+                <a class="table__admin-edit" title="Sửa">
+                  <i class="bx bx-edit-alt bx-sm"></i>
+                </a>
+                <a class="table__admin-trash" title="Xóa">
+                  <i class="bx bx-trash bx-sm"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+              <td>
+                <span class="table-admin__price">500.000đ</span>
+              </td>
+              <td>
+                <span class="table-admin__price">500.000đ</span>
+              </td>
+              <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+              <td>
+                <img
+                  src="./assets/img/pro-m-jean-1-1.jpg"
+                  alt=""
+                  class="table-admin__img"
+                />
+              </td>
+              <td>
+                <img
+                  src="./assets/img/pro-m-jean-1-2.jpg"
+                  alt=""
+                  class="table-admin__img"
+                />
+              </td>
+
+              <td><span>Còn hàng</span></td>
+              <td><span>3</span></td>
+              <td>
+                <a class="table__admin-edit" title="Sửa">
+                  <i class="bx bx-edit-alt bx-sm"></i>
+                </a>
+                <a class="table__admin-trash" title="Xóa">
+                  <i class="bx bx-trash bx-sm"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+              <td>
+                <span class="table-admin__price">500.000đ</span>
+              </td>
+              <td>
+                <span class="table-admin__price">500.000đ</span>
+              </td>
+              <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+              <td>
+                <img
+                  src="./assets/img/pro-m-jean-1-1.jpg"
+                  alt=""
+                  class="table-admin__img"
+                />
+              </td>
+              <td>
+                <img
+                  src="./assets/img/pro-m-jean-1-2.jpg"
+                  alt=""
+                  class="table-admin__img"
+                />
+              </td>
+
+              <td><span>Còn hàng</span></td>
+              <td><span>3</span></td>
+              <td>
+                <a class="table__admin-edit" title="Sửa">
+                  <i class="bx bx-edit-alt bx-sm"></i>
+                </a>
+                <a class="table__admin-trash" title="Xóa">
+                  <i class="bx bx-trash bx-sm"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+              <td>
+                <span class="table-admin__price">500.000đ</span>
+              </td>
+              <td>
+                <span class="table-admin__price">500.000đ</span>
+              </td>
+              <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+              <td>
+                <img
+                  src="./assets/img/pro-m-jean-1-1.jpg"
+                  alt=""
+                  class="table-admin__img"
+                />
+              </td>
+              <td>
+                <img
+                  src="./assets/img/pro-m-jean-1-2.jpg"
+                  alt=""
+                  class="table-admin__img"
+                />
+              </td>
+
+              <td><span>Còn hàng</span></td>
+              <td><span>3</span></td>
+              <td>
+                <a class="table__admin-edit" title="Sửa">
+                  <i class="bx bx-edit-alt bx-sm"></i>
+                </a>
+                <a class="table__admin-trash" title="Xóa">
+                  <i class="bx bx-trash bx-sm"></i>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+              <td>
+                <span class="table-admin__price">500.000đ</span>
+              </td>
+              <td>
+                <span class="table-admin__price">500.000đ</span>
+              </td>
+              <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+              <td>
+                <img
+                  src="./assets/img/pro-m-jean-1-1.jpg"
+                  alt=""
+                  class="table-admin__img"
+                />
+              </td>
+              <td>
+                <img
+                  src="./assets/img/pro-m-jean-1-2.jpg"
+                  alt=""
+                  class="table-admin__img"
+                />
+              </td>
+
+              <td><span>Còn hàng</span></td>
+              <td><span>3</span></td>
+              <td>
+                <a class="table__admin-edit" title="Sửa">
+                  <i class="bx bx-edit-alt bx-sm"></i>
+                </a>
+                <a class="table__admin-trash" title="Xóa">
+                  <i class="bx bx-trash bx-sm"></i>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="overlay"></div>
+
+        <form id="productForm">
+          <button type="button" id="closeFormBtn">
+            <i class="bx bx-x"></i>
+          </button>
+          <label for="productName">Tên Sản Phẩm:</label>
+          <input type="text" id="productName" name="productName" />
+          <label for="productPrice">Giá Sản Phẩm:</label>
+          <input type="number" id="productPrice" name="productPrice" />
+          <label for="productPriceSale">Giá Khuyến Mãi:</label>
+          <input type="number" id="productPriceSale" name="productPriceSale" />
+          <label for="productDescription">Mô Tả:</label>
+          <textarea
+            id="productDescription"
+            name="productDescription"
+            rows="4"
+            cols="50"
+          ></textarea>
+          <label for="productImg1">Ảnh 1</label>
+          <input type="file" id="productImg1" name="productImg1" />
+          <label for="productImg2">Ảnh 2</label>
+          <input type="file" id="productImg2" name="productImg2" />
+          <label for="productStatus">Tình trạng hàng:</label>
+          <select id="productStatus" name="productStatus">
+            <option value="available">Còn hàng</option>
+            <option value="outOfStock">Hết hàng</option>
+          </select>
+          <label for="productQuantity">Số lượng:</label>
+          <input type="number" id="productQuantity" name="productQuantity" />
+
+          <button type="submit" class="btn">Xác Nhận</button>
+        </form>
+      </section>
+    </main>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
